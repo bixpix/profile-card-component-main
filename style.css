@@ -1,33 +1,63 @@
 body {
     box-sizing: border-box;
     margin: 0 0;
-}
-.main {
     font-family: "Kumbh Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
-    background: hsl(185, 75%, 39%) url("images/bg-pattern-top.svg");
-    height: 100%;
-    /* display: flex;
+    background: 
+    no-repeat -720px -800px url("images/bg-pattern-top.svg"),
+    no-repeat 500px 300px url("images/bg-pattern-bottom.svg") ,
+    hsl(185, 75%, 39%);
+    background-size: 100%, 100%, auto;
+}
+.main {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; */
+    align-items: center;
 }
 .card {
-    width: 576px;
-    /* height: 300px; */
-    margin: 0 auto;
-    border: black;
+    background-color: #fff;
+    text-align: center;
+    width: 400px;
+    margin-top: 100px; 
+    margin-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.10) 10px 10px 20px; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .card h1 {
-    font-size: 24px;
+    font-size: 1.33rem;
 }
 .card h2 {
-    font-size: 22px;
+    font-size: 1.22rem;
+}
+.banniere {
+    background-size: cover;
+    background-image: url("images/bg-pattern-card.svg");
+    height: 200px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
 }
 img {
+    margin-top: -48px;
     border-radius: 100px;
+    border: 5px solid #fff;
+}
+.identity {
+    display: flex;
+    /* justify-content: center; */
+
+}
+.id-location {
+    align-self: flex-end;
+}
+.stat {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: baseline; */
+}
+.panel {
+    text-align: center;
 }
